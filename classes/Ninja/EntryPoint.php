@@ -23,6 +23,7 @@ class EntryPoint {
 		include  __DIR__ . '/../../templates/' . $templateFileName;
 		return ob_get_clean();
 	}
+	// он сказал поехали, имахнул рукой
 	public function run() {
 		$routes = $this->routes->getRoutes();
 		$controller = $routes[$this->route][$this->method]['controller'];
